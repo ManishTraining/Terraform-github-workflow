@@ -11,7 +11,7 @@ vpc = {
   create                  = true
   ipv4_primary_cidr_block = "10.51.0.0/16"
   public_subnets_cidr     = ["10.51.0.0/24"]
-  private_subnets_cidr    = ["10.51.4.0/24","10.51.5.0/24"]
+  private_subnets_cidr    = ["10.51.4.0/24"]
   availability_zones      = ["ap-south-1a", "ap-south-1b"]
 }
 
@@ -28,8 +28,9 @@ ec2 = {
     vpc_id             = null
     template_file      = "files/user_data/custom_ssh_port.sh"
     security_group_ids = ["sg-04e28c73c603472a9"]
-    
-  },
+  
+  }
+  /*
   api1 = {
     ec2_subnet_id      = "public" #"fintech-india-private-subnet-0"  # give subnet name 
     ssh_key            = "test-key-pair"
@@ -56,6 +57,7 @@ ec2 = {
     template_file      = "files/user_data/custom_ssh_port.sh"
     security_group_ids = ["sg-04e28c73c603472a9"]
   }
+  */
 }
 
 db = {
