@@ -27,7 +27,7 @@ ec2 = {
     volume_type        = "gp2"
     vpc_id             = null
     template_file      = "files/user_data/custom_ssh_port.sh"
-    security_group_ids = ["sg-04e28c73c603472a9"]
+    security_group_ids = ["sg-02754b82f92b5a703"]
   
   }
   /*
