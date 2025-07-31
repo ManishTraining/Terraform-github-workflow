@@ -19,7 +19,7 @@ ec2 = {
   fintech-bastion = {
     ec2_subnet_id      = "public"  # no need to give vpc id separaetly "fintech-india-public-subnet-0"    #"subnet-0c2a30d3f0c07367f"  # give subnet name 
     ssh_key            = "test-key-pair"
-    ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
+    ami_id             = "ami-0b09627181c8d5778" 
     name               = "fintech-bastion"
     instance_type      = "t2.micro"
     source_dest_check  = "true"
@@ -27,13 +27,13 @@ ec2 = {
     volume_type        = "gp2"
     vpc_id             = null
     template_file      = "files/user_data/custom_ssh_port.sh"
-    security_group_ids = ["sg-0e2d8d824cca33c85"]
+    security_group_ids = ["sg-04e28c73c603472a9"]
     
   },
   api1 = {
     ec2_subnet_id      = "public" #"fintech-india-private-subnet-0"  # give subnet name 
     ssh_key            = "test-key-pair"
-    ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
+    ami_id             = "ami-0b09627181c8d5778" 
     name               = "test1"
     instance_type      = "t2.micro"
     source_dest_check  = "true"
@@ -41,12 +41,12 @@ ec2 = {
     volume_type        = "gp2"
     vpc_id             = null
     template_file      = "files/user_data/custom_ssh_port.sh"
-    security_group_ids = ["sg-0e2d8d824cca33c85"]
+    security_group_ids = ["sg-04e28c73c603472a9"]
   },
   test_worker1 = {
     ec2_subnet_id      = "private" #"fintech-india-private-subnet-0"  # trying giving pub subnet id manually by picking from ui 
     ssh_key            = "test-key-pair"
-    ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
+    ami_id             = "ami-0b09627181c8d5778" 
     name               = "test_worker1"
     instance_type      = "t2.micro"
     source_dest_check  = "true"
@@ -54,7 +54,7 @@ ec2 = {
     volume_type        = "gp2"
     vpc_id             = null
     template_file      = "files/user_data/custom_ssh_port.sh"
-    security_group_ids = ["sg-0e2d8d824cca33c85"]
+    security_group_ids = ["sg-04e28c73c603472a9"]
   }
 }
 
