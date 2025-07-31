@@ -6,11 +6,11 @@ on:
       opco:
         description: 'Select the opco value'
         required: true
-        default: 'airtel'
+        default: 'fintech'
       country:
         description: 'Select the country value'
         required: true
-        default: 'zambia'
+        default: 'india'
       env:
         description: 'Select the environment value'
         required: true

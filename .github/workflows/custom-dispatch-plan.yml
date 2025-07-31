@@ -7,26 +7,23 @@ on:
       opco:
         description: 'Select the opco value'
         required: true
-        default: 'airtel'
-        #type: choice  #added for dropdown menu
+        default: 'fintech'
+        type: choice  #added for dropdown menu
         options:
-          - mtn
-          - airtel
-          - opco2
-          - opco3
-          - aws
+          - fintech
+          - zintech
+          - fliptech
+          - stackbomb
       country:
         description: 'Select the country value'
         required: true
-        default: 'zambia'
-        #type: choice  #added for dropdown
+        default: 'india'
+        type: choice  #added for dropdown
         options:
-          - rawanda
-          - zambia
-          - od
-          - zm-zedfin
-          - malawi
-          - cofina
+          - india
+          - us
+          - Ireland
+          - Kailasha
       env:
         description: 'Select the environment value'
         required: true
