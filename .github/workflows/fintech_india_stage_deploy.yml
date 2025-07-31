@@ -1,11 +1,11 @@
-name: AIRTEL MALAWI STAGE CI/CD
+name: fintech india STAGE CI/CD
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'tfvars/airtel-malawi/stage.tfvars' 
+      - 'tfvars/fintech-india/stage.tfvars' 
  
 
 jobs:
@@ -16,8 +16,8 @@ jobs:
     env:
       AWS_REGION: 'ap-south-1'
       TF_VERSION: '1.8.0'
-      OPCO: 'airtel'
-      COUNTRY: 'malawi'
+      OPCO: 'fintech'
+      COUNTRY: 'india'
       ENVIRONMENT: 'stage'
 
 
