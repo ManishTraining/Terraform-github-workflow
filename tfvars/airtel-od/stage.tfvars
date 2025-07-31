@@ -5,14 +5,14 @@ opco                = "fintech"
 country             = "od"
 env                 = "stage"
 project_name        = "fintech-od"
-region              = "ap-south-2"
+region              = "ap-south-1"
 
 vpc = {
   create                   = false  // need to give vpc id and exact subnet id explicitly with every ec2
   #ipv4_primary_cidr_block = "10.51.0.0/21"
   #public_subnets_cidr     = ["10.51.0.0/24"] #["10.51.0.0/24"]
   #private_subnets_cidr    = ["10.51.4.0/24"] # ["10.51.4.0/24", "10.51.5.0/24"]
-  #availability_zones      = ["ap-south-2a", "ap-south-2b"]
+  #availability_zones      = ["ap-south-1a", "ap-south-1b"]
 }
 
 #ec2 module

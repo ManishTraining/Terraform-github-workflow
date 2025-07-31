@@ -18,7 +18,7 @@ variable "project_name" {
 }
 variable "region" {
   type    = string
-  default = "ap-south-2"
+  default = "ap-south-1"
 }
 #VPC variables
 variable "vpc" {

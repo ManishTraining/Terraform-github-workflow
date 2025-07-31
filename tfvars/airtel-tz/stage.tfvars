@@ -5,14 +5,14 @@ opco    = "fintech"
 country = "tz"
 env     = "stage"
 project_name = "fintech-tz"
-region       = "ap-south-2"
+region       = "ap-south-1"
 
 vpc = {
   create                  = true  # vpc-9d486cf5
   ipv4_primary_cidr_block = "10.51.0.0/16"
   public_subnets_cidr     = ["10.51.0.0/24"]
   private_subnets_cidr    = ["10.51.3.0/24", "10.51.5.0/24"]
-  availability_zones      = ["ap-south-2a", "ap-south-2b"]
+  availability_zones      = ["ap-south-1a", "ap-south-1b"]
 }
 
 #ec2 module

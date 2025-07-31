@@ -4,7 +4,7 @@ project = "abc"
 opco    = "furaha"
 env     = "dev"
 project_name = "furaha-dev"
-region       = "ap-south-2"
+region       = "ap-south-1"
 
 vpc = {
   create                  = false  # vpc-9d486cf5
