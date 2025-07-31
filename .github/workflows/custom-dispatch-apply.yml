@@ -78,6 +78,6 @@ jobs:
 
       #run: terraform plan -target=module.vpc -out=tfplan -no-color -input=false -var-file ./tfvars/${opco}-${country}/${env}.tfvars
 
-    # - name: 'Terraform Apply'
-    #   if: github.ref == 'refs/heads/main'
-    #   run: terraform apply tfplan   #terraform apply -auto-approve tfplan
+    - name: 'Terraform Apply'
+      if: github.ref == 'refs/heads/main'
+      run: terraform apply tfplan   #terraform apply -auto-approve tfplan
