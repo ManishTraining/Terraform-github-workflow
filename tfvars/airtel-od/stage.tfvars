@@ -1,10 +1,10 @@
 #module vpc test
 
-project             = "yabx"
-opco                = "airtel"
+project             = "abc"
+opco                = "fintech"
 country             = "od"
 env                 = "stage"
-project_name        = "airtel-od"
+project_name        = "fintech-od"
 region              = "ap-south-2"
 
 vpc = {
@@ -19,7 +19,7 @@ vpc = {
 
 ec2 = {
   testapi12 = {
-    ec2_subnet_id      = "subnet-0194b85c3c1e2afc3"    # a subnet id in defaut subnet #"airtel-od-private-subnet-0"   #"subnet-0c16c6605f1d13f1f"  # airtel tz pvt subnet 
+    ec2_subnet_id      = "subnet-0194b85c3c1e2afc3"    # a subnet id in defaut subnet #"fintech-od-private-subnet-0"   #"subnet-0c16c6605f1d13f1f"  # fintech tz pvt subnet 
     vpc_id             = "vpc-079e87a5968a56f9d"   # default vpc id  #### mandatory in stage where vpc create is false
     ssh_key            = "test-key-pair"   # give ur ssh key
     ami_id             = "ami-0d81f2cd09b410166"

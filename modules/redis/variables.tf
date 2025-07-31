@@ -1,7 +1,7 @@
 
 variable "project_name" {
   type    = string
-  default = "airtel-mw"
+  default = "fintech-mw"
 }
 
 variable "env" {

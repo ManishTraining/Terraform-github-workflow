@@ -1,10 +1,10 @@
 #module vpc test
 
-project = "yabx"
-opco    = "airtel"
+project = "abc"
+opco    = "fintech"
 country = "tz"
 env     = "stage"
-project_name = "airtel-tz"
+project_name = "fintech-tz"
 region       = "ap-south-2"
 
 vpc = {
@@ -18,7 +18,7 @@ vpc = {
 #ec2 module
 ec2 = {
   test-lms-web1 = {
-    ec2_subnet_id      = "public"  #"airtel-tz-private-subnet-0"    #subnet-b0edafd8"   #"airtel-tz-private-subnet-0"   #pvt=subnet-0443c154bd6a4b691 pub=subnet-b0edafd8
+    ec2_subnet_id      = "public"  #"fintech-tz-private-subnet-0"    #subnet-b0edafd8"   #"fintech-tz-private-subnet-0"   #pvt=subnet-0443c154bd6a4b691 pub=subnet-b0edafd8
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166"
     name               = "test-lms-web1"

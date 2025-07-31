@@ -38,7 +38,7 @@ variable "vpc_id" {
 
 variable "project_name" {
   type    = string
-  default = "airtel-mw"
+  default = "fintech-mw"
 }
 
 variable "vpc_security_group_ids" {

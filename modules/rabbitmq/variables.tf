@@ -109,5 +109,5 @@ variable "logs_general" {
 
 variable "project_name" {
   type    = string
-  default = "airtel-mw"
+  default = "fintech-mw"
 }

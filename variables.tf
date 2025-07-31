@@ -6,7 +6,7 @@ variable "env" {
 }
 variable "opco" {
   type    = string
-  default = "airtel"
+  default = "fintech"
 }
 variable "country" {
   type    = string
@@ -14,7 +14,7 @@ variable "country" {
 }
 variable "project_name" {
   type    = string
-  default = "airtel-mw"
+  default = "fintech-mw"
 }
 variable "region" {
   type    = string

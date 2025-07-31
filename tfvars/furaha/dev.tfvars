@@ -1,6 +1,6 @@
 #module vpc test
 
-project = "yabx"
+project = "abc"
 opco    = "furaha"
 env     = "dev"
 project_name = "furaha-dev"
@@ -13,7 +13,7 @@ vpc = {
 #ec2 module
 ec2 = {
   lms = {
-    ec2_subnet_id      = "subnet-0ac77801b5b434092" #"give-id-here"  #  ###  "public"  #"airtel-tz-private-subnet-0"    #subnet-b0edafd8"   #"airtel-tz-private-subnet-0"   #pvt=subnet-0443c154bd6a4b691 pub=subnet-b0edafd8
+    ec2_subnet_id      = "subnet-0ac77801b5b434092" #"give-id-here"  #  ###  "public"  #"fintech-tz-private-subnet-0"    #subnet-b0edafd8"   #"fintech-tz-private-subnet-0"   #pvt=subnet-0443c154bd6a4b691 pub=subnet-b0edafd8
     ssh_key            = "test-key-pair"    #"give pem key here"  ###  
     ami_id             = "ami-0a94a70b8a1454a4b"  #ubuntu 22
     name               = "lms"

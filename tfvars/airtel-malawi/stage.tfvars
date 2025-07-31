@@ -1,10 +1,10 @@
 #module vpc test
 
 
-opco    = "airtel"
-country = "malawi"
+opco    = "fintech"
+country = "india"
 env     = "stage"
-project_name = "airtel-malawi"
+project_name = "fintech-india"
 region       = "ap-south-2"
 
 vpc = {
@@ -17,7 +17,7 @@ vpc = {
 
 ec2 = {
   bastion1 = {
-    ec2_subnet_id      = "public"  # no need to give vpc id separaetly "airtel-malawi-public-subnet-0"    #"subnet-0c2a30d3f0c07367f"  # give subnet name 
+    ec2_subnet_id      = "public"  # no need to give vpc id separaetly "fintech-india-public-subnet-0"    #"subnet-0c2a30d3f0c07367f"  # give subnet name 
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
     name               = "bastion1"
@@ -31,7 +31,7 @@ ec2 = {
     
   },
   api1 = {
-    ec2_subnet_id      = "public" #"airtel-malawi-private-subnet-0"  # give subnet name 
+    ec2_subnet_id      = "public" #"fintech-india-private-subnet-0"  # give subnet name 
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
     name               = "test1"
@@ -44,7 +44,7 @@ ec2 = {
     security_group_ids = ["sg-0e2d8d824cca33c85"]
   },
   test_worker1 = {
-    ec2_subnet_id      = "private" #"airtel-malawi-private-subnet-0"  # trying giving pub subnet id manually by picking from ui 
+    ec2_subnet_id      = "private" #"fintech-india-private-subnet-0"  # trying giving pub subnet id manually by picking from ui 
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166" #"ami-0f5ee92e2d63afc18"
     name               = "test_worker1"

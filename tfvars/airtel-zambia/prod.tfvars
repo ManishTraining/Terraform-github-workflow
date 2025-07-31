@@ -1,10 +1,10 @@
 #module vpc test
 
-project = "yabx-test"
-opco    = "airtel"
+project = "abc-test"
+opco    = "fintech"
 country = "zambia"
 env     = "prod"
-project_name = "airtel-zambia"
+project_name = "fintech-zambia"
 region       = "ap-south-2"
 
 
@@ -19,7 +19,7 @@ vpc = {
 #ec2 module
 ec2 = {
   nginx = {
-    ec2_subnet_id      = "public"   #"airtel-zambia-private-subnet-0"
+    ec2_subnet_id      = "public"   #"fintech-zambia-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-083d7ff73dafd9229"   #"ami-008f39a0a3cddb14d" #graviton #"ami-0d81f2cd09b410166"
     name               = "nginx"
@@ -32,7 +32,7 @@ ec2 = {
     security_group_ids = ["sg-04cff4879e3dfc8ea"]
   },
   lms-api-1 = {
-    ec2_subnet_id      = "private"   #"airtel-zambia-private-subnet-0"
+    ec2_subnet_id      = "private"   #"fintech-zambia-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-083d7ff73dafd9229"     #"ami-0d81f2cd09b410166"
     name               = "lms-api-1"
@@ -45,7 +45,7 @@ ec2 = {
     security_group_ids = ["sg-0ad14ee768e4e2c84"]
   },
     bastion = {
-    ec2_subnet_id      = "public"   #"airtel-zambia-private-subnet-0"
+    ec2_subnet_id      = "public"   #"fintech-zambia-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-083d7ff73dafd9229"     #"ami-0d81f2cd09b410166"
     name               = "bastion"
@@ -58,7 +58,7 @@ ec2 = {
     security_group_ids = ["sg-0490183e654090281"]
   },
     lms-api-2 = {
-    ec2_subnet_id      = "private"   #"airtel-zambia-private-subnet-0"
+    ec2_subnet_id      = "private"   #"fintech-zambia-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-083d7ff73dafd9229"     #"ami-0d81f2cd09b410166"
     name               = "lms-api-2"
@@ -76,9 +76,9 @@ db = {
   DbStorageSizeConfig             = 20
   DBEngineVersion                 = "14.12"
   DbInstanceClass                 = "db.m6gd.large"  #"db.t3.medium"  Standard classes (includes m classes)
-  DbName                          = "testairtelzambia"
-  DbUserName                      = "testairtelzambia"
-  DbPassword                      = "testairtelzambiapwd"
+  DbName                          = "testfintechzambia"
+  DbUserName                      = "testfintechzambia"
+  DbPassword                      = "testfintechzambiapwd"
   Port                            = 5432
   max_allocated_storage           = 100
   DBType                          = "Multi-AZ" # Change to "Single Node" if no HA is required
