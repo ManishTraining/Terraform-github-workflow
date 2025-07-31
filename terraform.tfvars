@@ -2,9 +2,9 @@
 
 project = "abc"
 opco    = "fintech"
-country = "zf"
+country = "india"
 env     = "stage"
-project_name = "fintech-zf"
+project_name = "fintech-india"
 region      = "ap-south-1"
 
 vpc = {
@@ -18,7 +18,7 @@ vpc = {
 
 ec2 = {
   lms = {
-    ec2_subnet_id      = "private"  #"fintech-zf-private-subnet-0"
+    ec2_subnet_id      = "private"  #"fintech-india-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166"
     name               = "lms"
@@ -31,7 +31,7 @@ ec2 = {
     vpc_id             = null
   },
   api = {
-    ec2_subnet_id      = "public"  #"fintech-zf-private-subnet-0"
+    ec2_subnet_id      = "public"  #"fintech-india-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166"
     name               = "api"
@@ -45,7 +45,7 @@ ec2 = {
 
   },
   worker = {
-    ec2_subnet_id      = "private"  #"fintech-zf-private-subnet-0"
+    ec2_subnet_id      = "private"  #"fintech-india-private-subnet-0"
     ssh_key            = "test-key-pair"
     ami_id             = "ami-0d81f2cd09b410166"
     name               = "worker"
@@ -64,9 +64,9 @@ db = {
   DbStorageSizeConfig             = 20
   DBEngineVersion                 = "14-12"
   DbInstanceClass                 = "db.m6gd.large"
-  DbName                          = "fintech-zf"
-  DbUserName                      = "fintech-zf"
-  DbPassword                      = "fintechzfpwd"
+  DbName                          = "fintech-india"
+  DbUserName                      = "fintech-india"
+  DbPassword                      = "fintechindiapwd"
   Port                            = 5432
   max_allocated_storage           = 100
   DBType                          = "Multi-AZ" # Change to "Single Node" if no HA is required

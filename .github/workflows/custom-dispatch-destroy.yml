@@ -53,6 +53,6 @@ jobs:
     - name: 'Terraform Plan Destroy'
       run: terraform plan -destroy -out=tfplan -no-color -input=false -var-file ./tfvars/${{ github.event.inputs.opco }}-${{ github.event.inputs.country }}/${{ github.event.inputs.env }}.tfvars
 
-    # - name: 'Terraform Destroy'
-    #   if: github.ref == 'refs/heads/main'
-    #   run: terraform apply -destroy -auto-approve tfplan
+    - name: 'Terraform Destroy'
+      if: github.ref == 'refs/heads/main'
+      run: terraform apply -destroy -auto-approve tfplan
