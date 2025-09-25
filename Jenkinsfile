@@ -78,15 +78,15 @@ pipeline {
             }
         }
 
-        // stage('Terraform Apply') {
-        //     when {
-        //         expression { return params.APPLY == true }
-        //     }
-        //     steps {
-        //         input message: "Apply Terraform plan for ${params.OPCO}-${params.COUNTRY}-${params.ENV}?", ok: "Apply"
-        //         sh "terraform apply -auto-approve tfplan"
-        //     }
-        // }
+        stage('Terraform Apply') {
+            when {
+                expression { return params.APPLY == true }
+            }
+            steps {
+                input message: "Apply Terraform plan for ${params.OPCO}-${params.COUNTRY}-${params.ENV}?", ok: "Apply"
+                sh "terraform apply -auto-approve tfplan"
+            }
+        }
     }
 
     post {
