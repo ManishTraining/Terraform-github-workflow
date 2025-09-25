@@ -11,11 +11,12 @@ vpc = {
   create                  = true
   ipv4_primary_cidr_block = "10.51.0.0/16"
   public_subnets_cidr     = ["10.51.0.0/24"]
-  private_subnets_cidr    = ["10.51.4.0/24","10.51.5.0/24"]
-  availability_zones      = ["ap-south-1a", "ap-south-1b"]
+  private_subnets_cidr    = []
+  availability_zones      = ["ap-south-1a"]
 }
 
 ec2 = {
+/*
   bastion1 = {
     ec2_subnet_id      = "public"  # no need to give vpc id separaetly "zintech-india-public-subnet-0"    #"subnet-0c2a30d3f0c07367f"  # give subnet name 
     ssh_key            = "test-key-pair"
@@ -56,6 +57,7 @@ ec2 = {
     template_file      = "files/user_data/custom_ssh_port.sh"
     security_group_ids = ["sg-0e2d8d824cca33c85"]
   }
+*/
 }
 
 db = {
