@@ -32,5 +32,5 @@ variable "availability_zones" {
 
 variable "nat_gw_enabled" {
   type    = bool
-  default = true
+  default = false
 } 
