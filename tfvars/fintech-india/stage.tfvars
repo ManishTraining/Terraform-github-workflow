@@ -11,23 +11,23 @@ vpc = {
   create                  = true
   ipv4_primary_cidr_block = "10.51.0.0/16"
   public_subnets_cidr     = ["10.51.0.0/24"]
-  private_subnets_cidr    = ["10.51.4.0/24"]
-  availability_zones      = ["ap-south-1a", "ap-south-1b"]
+  private_subnets_cidr    = []
+  availability_zones      = ["ap-south-1a"]
 }
 
 ec2 = {
   fintech-bastion = {
     ec2_subnet_id      = "public"  # no need to give vpc id separaetly "fintech-india-public-subnet-0"    #"subnet-0c2a30d3f0c07367f"  # give subnet name 
-    ssh_key            = "test-key-pair"
-    ami_id             = "ami-0b09627181c8d5778" 
+    ssh_key            = "manish"
+    ami_id             = "ami-02d26659fd82cf299"  #"ami-0b09627181c8d5778" 
     name               = "fintech-bastion"
     instance_type      = "t2.micro"
     source_dest_check  = "true"
     ec2_storage        = "30"  # Maximum size under Free Tier
     volume_type        = "gp2"
     vpc_id             = null
-    template_file      = "files/user_data/custom_ssh_port.sh"
-    security_group_ids = ["sg-02754b82f92b5a703"]
+    template_file      = "" #"files/user_data/custom_ssh_port.sh"
+    security_group_ids = ["sg-09216d8023c284bf2"]
   
   }
   /*
